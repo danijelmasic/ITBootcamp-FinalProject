@@ -1,0 +1,89 @@
+--------------- Login Test Cases ---------------
+
+Login_01
+1. Navigate to https://www.saucedemo.com/
+2. Enter a valid username
+3. Enter a valid password
+4. Click the login button
+5. Assert that login is successful and that you are
+directed to the home page
+
+Login_02
+1. Navigate to https://www.saucedemo.com/
+2. Enter a valid username
+3. Enter an invalid password
+4. Click the login button
+5. Assert that error message has appeared
+
+Login_03
+1. Navigate to https://www.saucedemo.com/
+2. Enter an invalid username
+3. Enter a valid password
+4. Click the login button
+5. Assert that error message has appeared
+
+Login_04
+1. Navigate to https://www.saucedemo.com/
+2. Enter an invalid username
+3. Enter an invalid password
+4. Click the login button
+5. Assert that error message has appeared
+
+--------------- Shopping Cart Test Cases ---------------
+
+Cart_01
+1. Navigate to https://www.saucedemo.com/inventory.html
+with a logged account
+2. Find an item you wish to add to the cart
+3. Click the ""add to cart"" button
+4. Assert that the item has been added to the cart
+
+Cart_02
+1. Navigate to https://www.saucedemo.com/inventory.html
+with a logged account
+2. Click the ""add to cart"" button on multiple items
+4. Assert that items are added to the cart
+
+Cart_03
+1. Navigate to https://www.saucedemo.com/inventory.html
+with a logged account
+2. Navigate to the shopping cart
+3. Click on the ""remove"" button
+4. Assert that the item has been removed
+
+Cart_04
+1. Navigate to https://www.saucedemo.com/inventory.html
+with a logged account
+2. Add an item
+3. Navigate to the shopping cart
+4. Click on the ""checkout"" button
+5. Enter values to the wanted fields
+6. Click ""continue"" button
+7. Click ""finish"" button
+8. Assert that the purchase has been made
+
+--------------- Sort By Test Cases ---------------
+
+SortBy_01
+1. Navigate to https://www.saucedemo.com/
+and log in
+2. Click on sorting dropdown and choose Price(low to high)
+3. Assert that all items are sorted from low to high price
+
+SortBy_02
+1. Navigate to https://www.saucedemo.com/
+and log in
+2. Click on sorting dropdown and choose Price(high to low)
+3. Assert that all items are sorted from high to low price
+
+SortBy_03
+1. Navigate to https://www.saucedemo.com/
+and log in
+2. Click on sorting dropdown and choose Name(A to Z)
+3. Assert that all items are sorted from A to Z
+
+SortBy_04
+1. Navigate to https://www.saucedemo.com/
+and log in
+2. Click on sorting dropdown and choose Name(Z to A)
+3. Assert that all items are sorted from Z to A

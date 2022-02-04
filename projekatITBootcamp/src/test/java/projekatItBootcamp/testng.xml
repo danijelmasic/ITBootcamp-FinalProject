@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Automation IT Bootcamp project" verbose="1" >
+
+    <test name="Shopping Cart Test" >
+        <classes>
+            <class name="projekatItBootcamp.test.shoppingCartTest" />
+        </classes>
+    </test>
+
+    <test name="Login Test" >
+        <classes>
+            <class name="projekatItBootcamp.test.loginTest" />
+        </classes>
+    </test>
+
+    <test name="Sort By Test" >
+        <classes>
+            <class name="projekatItBootcamp.test.SortByTest" />
+        </classes>
+    </test>
+
+
+
+
+</suite>
