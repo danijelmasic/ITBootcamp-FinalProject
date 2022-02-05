@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import projekatItBootcamp.pages.shoppingCart;
-import utils.PropReader;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -16,8 +15,7 @@ public class shoppingCartTest {
 
     @BeforeClass
     public void init() throws IOException {
-        System.setProperty("webdriver.chrome.driver",
-                PropReader.fetchProperty("WEBDRIVER.CHROME.PATH"));
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 
         wd = new ChromeDriver();
 

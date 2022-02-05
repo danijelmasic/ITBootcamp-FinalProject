@@ -29,13 +29,6 @@ public class login {
         PageFactory.initElements(wd, this);
     }
 
-    public WebElement getUsernameInput() {
-        return usernameInput;
-    }
-
-    public WebElement getPasswordInput() {
-        return passwordInput;
-    }
 
     public void inputValues(String username, String password){
         usernameInput.sendKeys(username);

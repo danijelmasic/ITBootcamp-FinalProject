@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import projekatItBootcamp.pages.sortBy;
-import utils.PropReader;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -20,10 +19,9 @@ public class SortByTest {
 
     private WebDriver wd;
 
-    @BeforeClass
+   @BeforeClass
     public void init() throws IOException {
-        System.setProperty("webdriver.chrome.driver",
-                PropReader.fetchProperty("WEBDRIVER.CHROME.PATH"));
+       System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 
         wd = new ChromeDriver();
 
